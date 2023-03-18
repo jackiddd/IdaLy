@@ -31,9 +31,6 @@ Because of the sampling difficulty and data privacy of industrial data, data we 
  # visualization()
  np.save(np.concentrate((ori_data, gen_data), axis=0),out_data_path)
  ```
+ ## Industrial Data Augmentation Platform
+ To fininsh industrial data augmentation tasks more conveniently, we intergrate algorithms above into a software developed by pyqt5. You can download the software [here] (https://drive.google.com/file/d/1muqsfoieiJoRcCWeEK9OmyYlBWDwvyO4/view?usp=sharing) directly and see the source code here.
  
- 
- 
- 
-
-[Download Idap here]https://drive.google.com/file/d/1muqsfoieiJoRcCWeEK9OmyYlBWDwvyO4/view?usp=sharing
