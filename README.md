@@ -34,6 +34,14 @@ Because of the sampling difficulty and data privacy of industrial data, data we 
  ## Industrial Data Augmentation Platform
  To fininsh industrial data augmentation tasks more conveniently, we intergrate algorithms above into a software developed by pyqt5. You can download the software [here](https://drive.google.com/file/d/1muqsfoieiJoRcCWeEK9OmyYlBWDwvyO4/view?usp=sharing) directly and see the source code here.
  ![example_1](https://github.com/3uchen/IdaLy/blob/master/example_1.png)  
-Idap mainly consists of seven modules:data import, algorithm select, algorithm description, parameter setting, data visualization, PCA visualization and simulation test.
+Idap mainly consists of senve modules:data import, algorithm select, algorithm description, parameter setting, PCA visualization, simulation test and save.
+- **Data import**
+    
+- **Algorithm select**
+- **Algorithm descripition**
+- **Parameter setting**
+- **PCA visualization**
+- **Simulation test**
+- **Save**
 
  
