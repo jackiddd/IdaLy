@@ -15,6 +15,25 @@ Because of the sampling difficulty and data privacy of industrial data, data we 
   - GAN, Generative Adversarial Network. Reference: [GAN](https://dl.acm.org/doi/pdf/10.1145/3422622), [GAN in industrial data](https://dl.acm.org/doi/pdf/10.1145/3422622X).
  
  We collect these algorithms in a python library.You can download it in [augmentation](https://github.com/3uchen/IdaLy/blob/master/src/augmentation.py) directly. Or you can download the library by pip instrustion: `pip install idaly`. It should be noted that the library is Python-based and requires at least Python 3.6, and the envrionment should satify [requirement.txt](https://github.com/3uchen/IdaLy/blob/master/requirements.txt).  
+ Here we give an example about how to use the library.  
+```python
+ import idaly.augmentation as aug
+ 
+ ori_data_path = "your_ori_industrial_data_path.npy"
+ out_data_path = "your_output_path.npy"
+ ori_data = np.load(ori_data_path)
+ 
+ # aug_method = aug.method(parameter)
+ # data_gen = aug_method.fit(ori_data)
+ aug_smote = aug.Smote(N=the numer generated, k=15)
+ gen_data = aug_smote.fit(ori_data)
+ 
+ # visualization()
+ np.save(np.concentrate((ori_data, gen_data), axis=0),out_data_path)
+ ```
+ 
+ 
+ 
  
 
 [Download Idap here]https://drive.google.com/file/d/1muqsfoieiJoRcCWeEK9OmyYlBWDwvyO4/view?usp=sharing
