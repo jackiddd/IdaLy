@@ -12,6 +12,7 @@ Because of the sampling difficulty and data privacy of industrial data, data we 
 - **Probability Model**
   - GMM, Gaussian Mixture Model. Reference: [GMM](http://leap.ee.iisc.ac.in/sriram/teaching/MLSP_16/refs/GMM_Tutorial_Reynolds.pdf), [GMM in industrial data](https://www.sciencedirect.com/science/article/pii/S002002552100935X). 
 - **Deep Learning**
-  - GAN, Generative Adversarial Network. Reference: [GAN](https://dl.acm.org/doi/pdf/10.1145/3422622), [GAN in industrial data](https://dl.acm.org/doi/pdf/10.1145/3422622X).
+  - GAN, Generative Adversarial Network. Reference: [GAN](https://dl.acm.org/doi/pdf/10.1145/3422622), [GAN in industrial data](https://dl.acm.org/doi/pdf/10.1145/3422622X).  
+ We collect these algorithms in a python library.You can download it in 
 
 [Download Idap here]https://drive.google.com/file/d/1muqsfoieiJoRcCWeEK9OmyYlBWDwvyO4/view?usp=sharing
