@@ -48,6 +48,8 @@ You can start data augmentaition procedure by clicking "START" buttoon. After fi
 - **Simulation test**  
 Idap embed simulation test module to further identify the effect of data augmention. We currently provide two test scenes:soft sensor and fault diagnosis. After data augmentation procedure, Idap will input the original data and new data (original data and generated data) to train model of test scenes respectively and display test results about the trained models. We will embed more test scenes and models in the future.
 - **Save**  
-You can save generated data, generative model (if any) and test result by click the related buttons respectively. Or you can save all results by click the label button of "Save all".
+You can save generated data, generative model (if any) and test result by click the related buttons respectively. Or you can save all results by click the label button of "Save all".  
+## Citation  
+
 
  
