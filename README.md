@@ -35,9 +35,10 @@ Because of the sampling difficulty and data privacy of industrial data, data we 
  To fininsh industrial data augmentation tasks more conveniently, we intergrate algorithms above into a software developed by pyqt5. You can download the software [here](https://drive.google.com/file/d/1muqsfoieiJoRcCWeEK9OmyYlBWDwvyO4/view?usp=sharing) directly and see the source code here.
  ![example_1](https://github.com/3uchen/IdaLy/blob/master/example_1.png)  
 Idap mainly consists of senve modules:data import, algorithm select, algorithm description, parameter setting, PCA visualization, simulation test and save.
-- **Data import**
-    
-- **Algorithm select**
+- **Data import**  
+You can click the label button of "open file" to import the original data, which only supports numpy file currently. The original data can either carry task label or not. The task can be industrial regression (such as soft sensor) and classification (such as fault diagnosis), which can be identified by Idap automatically. When it's regression, Idap will see continuous output as a feature. And when it's classfication, Idap will recombine original data according to the label and then generate data respectively.
+- **Algorithm select**  
+You can select any intergrated algorithm by clicking related buttons. You can also choose mode of single algorithms or combinational algorithms(developing).
 - **Algorithm descripition**
 - **Parameter setting**
 - **PCA visualization**
