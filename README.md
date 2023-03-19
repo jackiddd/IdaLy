@@ -46,7 +46,7 @@ This module will display the parameter setting interface of algorithm you have s
 - **PCA visualization**  
 You can start data augmentaition procedure by clicking "START" buttoon. After finishing it, Idap will use PCA to reduce the dimensionality of original data and generated data. And the scatter figure of bidimensional data will display on the interface, where you can indentfy the level of similarity between original data and generated data.
 - **Simulation test**
-
+Idap embed simulation test module to further identify the effect of data augmention. We currently provide two test scenes:soft sensor and fault diagnosis. After data augmentation procedure, Idap will input the original data and new data (original data and generated data) to train model of test scenes respectively and display test results about the trained models. We will embed more test scenes and models in the future.
 - **Save**
 
  
