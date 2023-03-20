@@ -32,8 +32,13 @@ Because of the sampling difficulty and data privacy of industrial data, data we 
  np.save(np.concentrate((ori_data, gen_data), axis=0),out_data_path)
  ```
  ## Industrial Data Augmentation Platform
- To fininsh industrial data augmentation tasks more conveniently, we intergrate algorithms mentioned above into a software developed by pyqt5. You can download the software [here](https://drive.google.com/file/d/1muqsfoieiJoRcCWeEK9OmyYlBWDwvyO4/view?usp=sharing) directly and see the source code here.
  ![example_1](https://github.com/3uchen/IdaLy/blob/master/example_1.png)  
+ To fininsh industrial data augmentation tasks more conveniently, we intergrate algorithms mentioned above into a software developed by pyqt5. You can download the software [here](https://drive.google.com/file/d/1muqsfoieiJoRcCWeEK9OmyYlBWDwvyO4/view?usp=sharing) directly, or clone Idaly and run our python file.  
+ ```
+ git clone git@github.com:3uchen/IdaLy.git
+ cd src\idap
+ python idap_v1.py
+ ```  
 Idap mainly consists of seven modules:data import, algorithm select, algorithm description, parameter setting, PCA visualization, simulation test and save.
 - **Data import**  
 You can click the label button of "open file" to import the original data, which only supports numpy file currently. The original data can either carry task label or not. The task can be industrial regression (such as soft sensor) and classification (such as fault diagnosis), which can be identified by Idap automatically. When it's regression, Idap will see continuous output as a feature. And when it's classfication, Idap will recombine original data according to the label and then generate data respectively.
