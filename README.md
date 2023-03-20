@@ -14,7 +14,7 @@ Because of the sampling difficulty and data privacy of industrial data, data we 
 - **Deep Learning**
   - GAN, Generative Adversarial Network. Reference: [GAN](https://dl.acm.org/doi/pdf/10.1145/3422622), [GAN in industrial data](https://dl.acm.org/doi/pdf/10.1145/3422622X).
  
- We collect these algorithms in a python library.You can download it in [augmentation](https://github.com/3uchen/IdaLy/blob/master/src/augmentation.py) directly. Or you can download the library by pip instrustion: `pip install idaly`. It should be noted that the library is Python-based and requires at least Python 3.6, and the envrionment should satify [requirement.txt](https://github.com/3uchen/IdaLy/blob/master/requirements.txt).  
+ We collect these algorithms in a python library.You can download it in [idaly](https://github.com/3uchen/IdaLy/tree/master/src/idaly) directly. Or you can download the library by pip instrustion: `pip install idaly`. It should be noted that the library is Python-based and requires at least Python 3.6, and the envrionment should satify [requirement.txt](https://github.com/3uchen/IdaLy/blob/master/requirements.txt).  
  Here we give an example about how to use the library.  
 ```python
  import idaly.augmentation as aug
