@@ -20,7 +20,7 @@ Because of the sampling difficulty and data privacy of industrial data, data we 
  # visualization()
  np.save(np.concentrate((ori_data, gen_data), axis=0),out_data_path)
  ```
-Based on Tennessee Eastman (TE) process dataset, We conducted a comparative experiment of 19 commonly used industrial data augmentation methods and the results are: 
+Based on Tennessee Eastman (TE) process dataset, We conducted a comparative experiment of 19 commonly used industrial data augmentation methods and the results are: [Results.xlsx](https://github.com/3uchen/IdaLy/blob/master/Results.xlsx) 
  ## Industrial Data Augmentation Platform
  ![example](https://github.com/3uchen/IdaLy/blob/master/example.png)  
  To fininsh industrial data augmentation tasks more conveniently, we intergrate algorithms mentioned above into a software developed by pyqt5. You can download the software [here](https://drive.google.com/file/d/1muqsfoieiJoRcCWeEK9OmyYlBWDwvyO4/view?usp=sharing) directly, or clone Idaly and run our python file.  
@@ -32,18 +32,18 @@ Based on Tennessee Eastman (TE) process dataset, We conducted a comparative expe
 Idap mainly consists of seven modules:data import, algorithm select, algorithm description, parameter setting, PCA visualization, simulation test and save.
 - **Data import**  
 The data import module, accessed by clicking the ‘open file’ blue label in the menu bar, is mainly used for the importation of raw data and identification of industrial context. At present, the IDAS supports importing
-data in NumPy, Excel, and Text file formats, which includes features and labels. The IDAS will automatically recognize the industrial task type according to the label of data after importation. In a regression task scenario (e.g., KPI predictions), the IDAS regards the continuous output label as feature, while in a classification task scenario (e.g., fault diagnosis), the IDAS reorganizes the raw data based on labels and sequentially generates virtual data for each class.
+data in NumPy, Excel, and Text file formats, which includes features and labels. The IDAS will automatically recognize the industrial task type according to the label of data after importation. In a regression task scenario (e.g., KPI predictions), the IDAS regards the continuous output label as feature, while in a classification task scenario (e.g., fault diagnosis), the IDAS reorganizes the raw data based on labels and sequentially generates virtual data for each class.
 - **Methods Selection and Description Module**  
 As of now, the IDAS has integrated twenty IDA methods, which are categorized into three classed: transformation, interpolation and distribution estimation. Users can opt for either single algorithm mode or combined mode during the algorithm selection, after which the algorithm description module will present a brief overview of the selected along with links to references.
 - **Parameter Configuration Module**  
-This module allows users to preconfigure parameters, while also enabling users to dynamically adjust parameters based on results of data generation and industrial intelligence tasks assessment to achieve optimal performance.
+This module allows users to preconfigure parameters, while also enabling users to dynamically adjust parameters based on results of data generation and industrial intelligence tasks assessment to achieve optimal performance.
 - **PCA Visualization Module**  
-After the process of data generation, PCA visualization module leverages PCA to reduce the dimensionality of the newly merged data from both the original and synthetic datasets, and subsequently plots them on the same two-dimensional scatterplot respectively, through which users can have an initial assessment of the effectiveness of data augmentation from the perspective of data diversity and fidelity of synthetic samples. It is worth mentioning that, in a classification task scenario, by clicking on the corresponding legend of a specific category on the scatterplot, the IDAS can display the visualization effect of that category.
+After the process of data generation, PCA visualization module leverages PCA to reduce the dimensionality of the newly merged data from both the original and synthetic datasets, and subsequently plots them on the same two-dimensional scatterplot respectively, through which users can have an initial assessment of the effectiveness of data augmentation from the perspective of data diversity and fidelity of synthetic samples. It is worth mentioning that, in a classification task scenario, by clicking on the corresponding legend of a specific category on the scatterplot, the IDAS can display the visualization effect of that category.
 - **Simulation test**  
-IDAS embed simulation test module to further identify the effect of data augmention. We currently provide two test scenes:soft sensor and fault diagnosis. After data augmentation procedure, Idap will input the original data and new data (original data and generated data) to train model of test scenes respectively and display test results about the trained models. We will embed more test scenes and models in the future.
+IDAS embed simulation test module to further identify the effect of data augmentation. We currently provide two test scenes:soft sensor and fault diagnosis. After data augmentation procedure, Idap will input the original data and new data (original data and generated data) to train model of test scenes respectively and display test results about the trained models. We will embed more test scenes and models in the future.
 - **Save**  
 You can save generated data, generative model (if any) and test result by click the related buttons respectively. Or you can save all results by click the label button of "Save all".  
-## Citation  
+
 
 
  
