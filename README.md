@@ -2,8 +2,7 @@
 IdaLy provides a python library and a software that support various algorithms for industrial data augmentation, which can promote the effiency of your industrial machine learning projects(such as fault diagnosis and soft sensor).You can use any algorithms in your script files by importing the python library.Certainly, if you are not familiar with coding of python or just want to finish augmentation tasks conveniently, you can use our software directly.  
 ## Augmentations
 Because of the sampling difficulty and data privacy of industrial data, data we can acquire from real industry process sometimes is insufficient, thus causing problems such as overfitting and class-imblance while training intelligent agencies. Nowadays, more and more data augmentation algorithms are applied in the field of industrial big data. We collect some algorithms often used and classify them as follows:  
-
- 
+ ![methods](https://github.com/3uchen/IdaLy/blob/master/methods.png)  
  We collect these algorithms in a python library.You can download it in [idaly](https://github.com/3uchen/IdaLy/tree/master/src/idaly) directly. Or you can download the library by pip instrustion: `pip install idaly`. It should be noted that the library is Python-based and requires at least Python 3.6, and the envrionment should satify [requirement.txt](https://github.com/3uchen/IdaLy/blob/master/requirements.txt).  
  Here we give an example about how to use the library.  
 ```python
@@ -21,8 +20,9 @@ Because of the sampling difficulty and data privacy of industrial data, data we 
  # visualization()
  np.save(np.concentrate((ori_data, gen_data), axis=0),out_data_path)
  ```
+Based on Tennessee Eastman (TE) process dataset, We conducted a comparative experiment of 19 commonly used industrial data augmentation methods and the results are: 
  ## Industrial Data Augmentation Platform
- ![example_1](https://github.com/3uchen/IdaLy/blob/master/example_1.png)  
+ ![example](https://github.com/3uchen/IdaLy/blob/master/example.png)  
  To fininsh industrial data augmentation tasks more conveniently, we intergrate algorithms mentioned above into a software developed by pyqt5. You can download the software [here](https://drive.google.com/file/d/1muqsfoieiJoRcCWeEK9OmyYlBWDwvyO4/view?usp=sharing) directly, or clone Idaly and run our python file.  
  ```
  git clone git@github.com:3uchen/IdaLy.git
@@ -31,17 +31,16 @@ Because of the sampling difficulty and data privacy of industrial data, data we 
  ```  
 Idap mainly consists of seven modules:data import, algorithm select, algorithm description, parameter setting, PCA visualization, simulation test and save.
 - **Data import**  
-You can click the label button of "open file" to import the original data, which only supports numpy file currently. The original data can either carry task label or not. The task can be industrial regression (such as soft sensor) and classification (such as fault diagnosis), which can be identified by Idap automatically. When it's regression, Idap will see continuous output as a feature. And when it's classfication, Idap will recombine original data according to the label and then generate data respectively.
-- **Algorithm select**  
-You can select any intergrated algorithm by clicking related buttons. You can also choose mode of single algorithms or combinational algorithms(developing).
-- **Algorithm descripition**  
-This module will display the brief description and reference of algorithm you have selected.
-- **Parameter setting**  
-This module will display the parameter setting interface of algorithm you have selected. You can preset parameters or adjust them in real time according to visualization output.
-- **PCA visualization**  
-You can start data augmentaition procedure by clicking "START" buttoon. After finishing it, Idap will use PCA to reduce the dimensionality of original data and generated data. And the scatter figure of bidimensional data will display on the interface, where you can indentify the level of similarity between original data and generated data.
+The data import module, accessed by clicking the ‘open file’ blue label in the menu bar, is mainly used for the importation of raw data and identification of industrial context. At present, the IDAS supports importing
+data in NumPy, Excel, and Text file formats, which includes features and labels. The IDAS will automatically recognize the industrial task type according to the label of data after importation. In a regression task scenario (e.g., KPI predictions), the IDAS regards the continuous output label as feature, while in a classification task scenario (e.g., fault diagnosis), the IDAS reorganizes the raw data based on labels and sequentially generates virtual data for each class.
+- **Methods Selection and Description Module**  
+As of now, the IDAS has integrated twenty IDA methods, which are categorized into three classed: transformation, interpolation and distribution estimation. Users can opt for either single algorithm mode or combined mode during the algorithm selection, after which the algorithm description module will present a brief overview of the selected along with links to references.
+- **Parameter Configuration Module**  
+This module allows users to preconfigure parameters, while also enabling users to dynamically adjust parameters based on results of data generation and industrial intelligence tasks assessment to achieve optimal performance.
+- **PCA Visualization Module**  
+After the process of data generation, PCA visualization module leverages PCA to reduce the dimensionality of the newly merged data from both the original and synthetic datasets, and subsequently plots them on the same two-dimensional scatterplot respectively, through which users can have an initial assessment of the effectiveness of data augmentation from the perspective of data diversity and fidelity of synthetic samples. It is worth mentioning that, in a classification task scenario, by clicking on the corresponding legend of a specific category on the scatterplot, the IDAS can display the visualization effect of that category.
 - **Simulation test**  
-Idap embed simulation test module to further identify the effect of data augmention. We currently provide two test scenes:soft sensor and fault diagnosis. After data augmentation procedure, Idap will input the original data and new data (original data and generated data) to train model of test scenes respectively and display test results about the trained models. We will embed more test scenes and models in the future.
+IDAS embed simulation test module to further identify the effect of data augmention. We currently provide two test scenes:soft sensor and fault diagnosis. After data augmentation procedure, Idap will input the original data and new data (original data and generated data) to train model of test scenes respectively and display test results about the trained models. We will embed more test scenes and models in the future.
 - **Save**  
 You can save generated data, generative model (if any) and test result by click the related buttons respectively. Or you can save all results by click the label button of "Save all".  
 ## Citation  
