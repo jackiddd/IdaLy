@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/5b61590d-7899-4f18-8c71-848231e6cf84)# IdaLy
+# IdaLy
 This repository contains code for the paper, Advancing Industrial Data Augmentation: A Thorough Survey from Foundations to Frontier Applications (submitted). IdaLy provides a python library and a software that support various algorithms for industrial data augmentation, which can promote the effiency of your industrial machine learning projects (such as fault diagnosis and soft sensor). You can use any algorithms in your script files by importing the python library. Certainly, if you are not familiar with coding of python or just want to finish augmentation tasks conveniently, you can use our software directly.  
 ## Augmentations
 Because of the sampling difficulty and data privacy of industrial data, data we can acquire from real industry process sometimes is insufficient, thus causing problems such as overfitting and class-imblance while training intelligent agencies. Nowadays, more and more data augmentation algorithms are applied in the field of industrial big data. We collect some algorithms often used and classify them as follows:  
@@ -45,26 +45,9 @@ You can save generated data, generative model (if any) and test result by click 
  # visualization()
 Based on Tennessee Eastman (TE) process dataset, We conducted a comparative experiment of 19 commonly used industrial data augmentation methods and the results are: 
 
-|    Methods   |    Time(s)    |               | Accuracy (SVM) |        |             | Accuracy (MLP) |        |             |
-|:------------:|:-------------:|:-------------:|:--------------:|:------:|:-----------:|:--------------:|:------:|:-----------:|
-|              | Modeling time | Sampling time |     before     |  after | improve (%) |     before     |  after | improve (%) |
-|      GNI     |     0.000     |     0.006     |     92.00      | 92.25  |    0.27     |     91.50      | 92.75  |    1.24     |
-|      MNI     |     0.000     |     0.155     |     92.00      | 92.50  |    0.54     |     92.50      | 94.00  |    1.62     |
-|      SNI     |     0.000     |     0.005     |     94.75      | 95.25  |    0.53     |     91.75      | 94.00  |    2.45     |
-|      PNI     |     0.000     |     0.006     |     94.00      | 94.00  |    0.00     |     92.50      | 95.25  |    2.97     |
-|     SMOTE    |     0.000     |     0.053     |     92.50      | 93.00  |    0.54     |     93.00      | 93.50  |    0.54     |
-| Kmeans_SMOTE |     0.000     |     0.063     |     94.25      | 94.75  |    0.53     |     92.00      | 95.25  |    3.53     |
-|     MIXUP    |     0.000     |     0.006     |     92.75      | 93.50  |    0.81     |     90.75      | 96.25  |    6.06     |
-|      LLE     |     0.016     |     9.885     |     93.50      | 93.50  |    0.00     |     93.50      | 94.75  |    1.34     |
-|      MTD     |     0.000     |     7.653     |     94.25      | 94.25  |    0.00     |     93.25      | 90.75  |    -2.68    |
-|    KNNMTD    |     0.000     |    13.739     |     92.00      | 91.75  |    -0.27    |     93.25      | 92.25  |    -1.07    |
-|      GMM     |     0.037     |     0.034     |     93.25      | 94.00  |    0.80     |     92.75      | 94.75  |    2.16     |
-|      GAN     |    32.247     |     0.121     |     93.25      | 94.00  |    0.80     |     92.00      | 93.50  |    1.63     |
-|    WGAN_GP   |    73.206     |     0.109     |     91.00      | 92.50  |    1.65     |     87.75      | 90.75  |    3.42     |
-|     LSGAN    |    55.960     |     0.127     |     93.25      | 93.25  |    0.00     |     91.75      | 92.50  |    0.82     |
-|      VAE     |    29.695     |     0.072     |     93.00      | 95.50  |    2.69     |     90.75      | 91.50  |    0.83     |
-|    VAEGAN    |    955.517    |     0.040     |     94.00      | 94.25  |    0.27     |     92.75      | 94.00  |    1.35     |
-|     DDPM     |    57.858     |     3.705     |     93.00      | 93.00  |    0.00     |     93.25      | 89.75  |    -3.75    |
-|    REALNVP   |    121.580    |     1.600     |     93.00      | 92.75  |    -0.27    |     92.00      | 92.75  |    0.82     |
-|     GLOW     |    153.070    |     1.610     |     93.50      | 93.75  |    0.28     |     92.25      | 93.75  |    1.63     |
+![Fig2](https://github.com/user-attachments/assets/e0a4c6ab-003c-4cd4-a225-2cacead971ee)
+![Fig3](https://github.com/user-attachments/assets/eceb4432-53be-45bd-8b92-b82356fd97f9)
+![Fig1](https://github.com/user-attachments/assets/11ce1907-95cd-49a2-b7b9-fbe8a0d568b0)
+
+
  
