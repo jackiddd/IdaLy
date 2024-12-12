@@ -45,10 +45,10 @@ You can save generated data, generative model (if any) and test result by click 
  # Benchmark (TEP dataset)
 Based on Tennessee Eastman (TE) process dataset, We conducted a comparative experiment of 19 commonly used industrial data augmentation methods and the results are: 
 
-<div style="text-align: center; display: block;">
+<center>
   <img src="https://github.com/user-attachments/assets/11ce1907-95cd-49a2-b7b9-fbe8a0d568b0" width="100%" />
-  <p>Fig.1 Inference Time and Accuracy of Fault Classification under Different DA Methods.</p>
-</div>
+  <p>Fig. 1 Inference Time and Accuracy of Fault Classification under Different Data Augmentation Methods.</p>
+</center>
 
 <div style="text-align: center;">
   <img src="https://github.com/user-attachments/assets/e0a4c6ab-003c-4cd4-a225-2cacead971ee" width="60%" />
