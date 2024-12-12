@@ -45,7 +45,7 @@ You can save generated data, generative model (if any) and test result by click 
  # visualization()
 Based on Tennessee Eastman (TE) process dataset, We conducted a comparative experiment of 19 commonly used industrial data augmentation methods and the results are: 
 
-|    Methods   |    Time(s)                   | Accuracy (SVM)              | Accuracy (MLP)              |
+|    Methods   |    Time(s)    |               | Accuracy (SVM) |        |             | Accuracy (MLP) |        |             |
 |:------------:|:-------------:|:-------------:|:--------------:|:------:|:-----------:|:--------------:|:------:|:-----------:|
 |              | Modeling time | Sampling time |     before     |  after | improve (%) |     before     |  after | improve (%) |
 |      GNI     |     0.000     |     0.006     |     92.00      | 92.25  |    0.27     |     91.50      | 92.75  |    1.24     |
