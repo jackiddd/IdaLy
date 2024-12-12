@@ -45,9 +45,11 @@ You can save generated data, generative model (if any) and test result by click 
  # visualization()
 Based on Tennessee Eastman (TE) process dataset, We conducted a comparative experiment of 19 commonly used industrial data augmentation methods and the results are: 
 
-![Fig2](https://github.com/user-attachments/assets/e0a4c6ab-003c-4cd4-a225-2cacead971ee)
-![Fig3](https://github.com/user-attachments/assets/eceb4432-53be-45bd-8b92-b82356fd97f9)
-![Fig1](https://github.com/user-attachments/assets/11ce1907-95cd-49a2-b7b9-fbe8a0d568b0)
+<div style="text-align: center;">
+ <img src="https://github.com/user-attachments/assets/e0a4c6ab-003c-4cd4-a225-2cacead971ee" width="80%" />
+ <img src="https://github.com/user-attachments/assets/eceb4432-53be-45bd-8b92-b82356fd97f9" width="80%" />
+ ![Fig1](https://github.com/user-attachments/assets/11ce1907-95cd-49a2-b7b9-fbe8a0d568b0)
+</div>
 
 
  
