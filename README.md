@@ -42,21 +42,20 @@ IDAS embed simulation test module to further identify the effect of data augment
 - **Save**  
 You can save generated data, generative model (if any) and test result by click the related buttons respectively. Or you can save all results by click the label button of "Save all".  
 
- # Benchmark (TEP dataset)
+ ##3. Benchmark (TEP dataset)
 Based on Tennessee Eastman (TE) process dataset, We conducted a comparative experiment of 19 commonly used industrial data augmentation methods and the results are: 
 
 <center>
   <img src="https://github.com/user-attachments/assets/11ce1907-95cd-49a2-b7b9-fbe8a0d568b0" width="100%" />
-  <p>Fig. 1 Inference Time and Accuracy of Fault Classification under Different Data Augmentation Methods.</p>
+  <p>Fig. 3.1 Inference Time and Accuracy of Fault Classification under Different Data Augmentation Methods.</p>
 </center>
 
-<div style="text-align: center;">
   <img src="https://github.com/user-attachments/assets/e0a4c6ab-003c-4cd4-a225-2cacead971ee" width="60%" />
- </div>
- 
-<div style="text-align: center;">
+ Fig. 3.2 Tiered Criteria for Different Metrics.
+
+
   <img src="https://github.com/user-attachments/assets/eceb4432-53be-45bd-8b92-b82356fd97f9" width="80%" />
-</div>
+ Fig. 3.3 Ranking of Different Data Augmentation Methods on TEP Dataset.
 
 
  
