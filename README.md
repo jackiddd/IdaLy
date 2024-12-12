@@ -51,11 +51,15 @@ Based on Tennessee Eastman (TE) process dataset, We conducted a comparative expe
 </center>
 
   <img src="https://github.com/user-attachments/assets/e0a4c6ab-003c-4cd4-a225-2cacead971ee" width="60%" />
- Fig. 3.2 Tiered Criteria for Different Metrics.
+  <p>Fig. 3.2 Tiered Criteria for Different Metrics.</p>
 
 
   <img src="https://github.com/user-attachments/assets/eceb4432-53be-45bd-8b92-b82356fd97f9" width="80%" />
- Fig. 3.3 Ranking of Different Data Augmentation Methods on TEP Dataset.
+  <p>Fig. 3.3 Ranking of Different Data Augmentation Methods on TEP Dataset.</p>
 
+ ##4. Contact
+  jiangxiaoyu@zju.edu.cn
+  
+  zhengchen0113@zju.edu.cn
 
  
